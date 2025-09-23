@@ -1,14 +1,41 @@
-<!doctype html>
-<html lang="en">
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محلل العروض الشعري</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <header>
+        <h1>محلل العروض الشعري</h1>
+        <p>أدخل بيتًا شعريًا لتحليله عروضيًا، أو جرّب أحد الأمثلة.</p>
+    </header>
+
+    <main>
+        <div class="input-section">
+            <textarea id="verse-input" placeholder="اكتب بيت الشعر هنا..."></textarea>
+            <div class="buttons-container">
+                <button id="analyze-btn">تحليل</button>
+                <button id="example-btn-1" class="example-btn">مثال للمتنبي</button>
+                <button id="example-btn-2" class="example-btn">مثال للسياب</button>
+                <button id="example-btn-3" class="example-btn">مثال صناعي</button>
+            </div>
+        </div>
+
+        <div id="results-container">
+            <!-- Results will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>صنع بواسطة الذكاء الاصطناعي</p>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
